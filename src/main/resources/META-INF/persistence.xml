@@ -5,7 +5,7 @@
              version="3.0">
     <!-- Define Persistence Unit -->
     <persistence-unit name="jp.co.kke.config_ConfigStandard_war_1.3.0PU" transaction-type="JTA">
-      <jta-data-source>jp.co.kke.config_ConfigStandard</jta-data-source>
+      <jta-data-source>jp.co.kke.config_ConfigStandard_JakartaEE</jta-data-source>
         <properties>
             <property name="jakarta.persistence.schema-generation.database.action" value="drop-and-create"/>
             <property name="jakarta.persistence.sql-load-script-source" value="META-INF/defauldata.sql"/>
