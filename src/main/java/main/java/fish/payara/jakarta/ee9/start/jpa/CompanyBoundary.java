@@ -5,6 +5,7 @@
 package main.java.fish.payara.jakarta.ee9.start.jpa;
 
 import jakarta.ejb.Stateless;
+import jakarta.ejb.TransactionAttribute;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.PersistenceContext;
 import jakarta.transaction.Transactional;
@@ -14,6 +15,7 @@ import jakarta.transaction.Transactional;
  * @author yuya-kambayashi
  */
 @Stateless
+@TransactionAttribute
 public class CompanyBoundary {
     
     @PersistenceContext()
