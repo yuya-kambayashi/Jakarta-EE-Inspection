@@ -4,7 +4,7 @@
  */
 package main.java.fish.payara.jakarta.ee9.start.jpa;
 
-import jakarta.enterprise.context.ApplicationScoped;
+import jakarta.ejb.Stateless;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.PersistenceContext;
 import jakarta.transaction.Transactional;
@@ -13,16 +13,15 @@ import jakarta.transaction.Transactional;
  *
  * @author yuya-kambayashi
  */
-@ApplicationScoped
-@Transactional
-public class CompanyService {
+@Stateless
+public class CompanyBoundary {
     
     @PersistenceContext()
-    private EntityManager entityManager;
+    private EntityManager em;
     
     
     public Company findCompany(Long id){
-        return entityManager.find(Company.class, 1L);
+        return em.find(Company.class, id);
     }
     
 }

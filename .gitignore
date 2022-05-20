@@ -1,3 +1,5 @@
 /Jakara-EE-Inspection/target/
 target/Jakarta-EE-Inspection-1.0-SNAPSHOT.war
 *.jar
+target/test-classes/.netbeans_automatic_build
+target/
