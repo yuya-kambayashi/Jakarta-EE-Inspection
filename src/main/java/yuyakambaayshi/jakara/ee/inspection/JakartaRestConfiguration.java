@@ -1,4 +1,4 @@
-package yuyakambaayshi.jakarta.ee.inspection;
+package yuyakambayashi.jakarta.ee.inspection;
 
 import jakarta.ws.rs.ApplicationPath;
 import jakarta.ws.rs.core.Application;
