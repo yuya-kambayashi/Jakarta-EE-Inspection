@@ -4,6 +4,7 @@
  */
 package main.java.fish.payara.jakarta.ee9.start.jpa;
 
+import jakarta.enterprise.context.RequestScoped;
 import jakarta.inject.Inject;
 import jakarta.ws.rs.GET;
 import jakarta.ws.rs.Path;
@@ -16,6 +17,8 @@ import jakarta.ws.rs.core.MediaType;
  *
  * @author yuya-kambayashi
  */
+@Path("/company")
+@RequestScoped
 public class CompanyResource {
     
     @Inject
