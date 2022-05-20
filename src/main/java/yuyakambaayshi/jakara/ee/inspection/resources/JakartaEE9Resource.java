@@ -1,4 +1,4 @@
-package yuyakambaayshi.jakara.ee.inspection.resources;
+package yuyakambaayshi.jakarta.ee.inspection.resources;
 
 import jakarta.ws.rs.GET;
 import jakarta.ws.rs.Path;
