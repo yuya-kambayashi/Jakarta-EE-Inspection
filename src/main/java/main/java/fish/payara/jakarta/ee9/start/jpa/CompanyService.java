@@ -22,7 +22,7 @@ public class CompanyService {
     
     
     public Company findCompany(Long id){
-        return entityManager.find(Company.class, 1L);
+        return entityManager.find(Company.class, id);
     }
     
 }
